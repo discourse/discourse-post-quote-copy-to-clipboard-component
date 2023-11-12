@@ -1,10 +1,10 @@
 import Component from "@glimmer/component";
-import I18n from "discourse-i18n";
-import { action } from "@ember/object";
 import { on } from "@ember/modifier";
+import { action } from "@ember/object";
+import { inject as service } from "@ember/service";
 import DButton from "discourse/components/d-button";
 import { clipboardCopy } from "discourse/lib/utilities";
-import { inject as service } from "@ember/service";
+import I18n from "discourse-i18n";
 
 export default class PostCopyQuoteButton extends Component {
   @service toasts;
