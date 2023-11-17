@@ -1,7 +1,7 @@
 en:
   theme_metadata:
-    description: "Adds a \"Copy\" button to the post context menu when highlighting text, that takes the Quote markdown and copies it to clipboard."
+    description: "Adds a \"Copy Quote\" button to the post context menu when highlighting text, that takes the Quote markdown and copies it to clipboard."
   post:
-    quote_copy: "Copy"
+    quote_copy: "Copy Quote"
     quote_copied_to_clibboard: "Quote copied to clipboard"
 
