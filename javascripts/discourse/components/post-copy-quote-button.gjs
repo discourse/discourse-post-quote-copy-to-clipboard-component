@@ -4,7 +4,7 @@ import { action } from "@ember/object";
 import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
 import { clipboardCopy } from "discourse/lib/utilities";
-import I18n from "discourse-i18n";
+import { i18n } from "discourse-i18n";
 
 export default class PostCopyQuoteButton extends Component {
   @service toasts;
@@ -15,7 +15,7 @@ export default class PostCopyQuoteButton extends Component {
     clipboardCopy(text);
     this.toasts.success({
       duration: 3000,
-      data: { message: I18n.t(themePrefix("post.quote_copied_to_clibboard")) },
+      data: { message: i18n(themePrefix("post.quote_copied_to_clibboard")) },
     });
     await this.args.outletArgs.data.hideToolbar();
   }
