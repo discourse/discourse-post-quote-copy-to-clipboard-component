@@ -15,7 +15,7 @@ export default class PostCopyQuoteButton extends Component {
     clipboardCopy(text);
     this.toasts.success({
       duration: 3000,
-      data: { message: i18n(themePrefix("post.quote_copied_to_clibboard")) },
+      data: { message: i18n(themePrefix("post.quote_copied_to_clipboard")) },
     });
     await this.args.outletArgs.data.hideToolbar();
   }
